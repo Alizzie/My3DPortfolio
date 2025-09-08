@@ -42,7 +42,9 @@ const About = () => {
         variants={fadeIn("", "",0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in Typescript and Javascript
+        I am a Computer Science student with a background in software development, including frontend web and Android applications. My work experience has led me to explore research in healthcare technologies, where I gained experience in backend development, data collection, and software engineering.
+        <br /><br />
+        These experiences sparked my interest in computational simulations for precision medicine, enabling personalized healthcare solutions through modeling, analysis, and data-driven insights. I am keen to explore diverse areas within Computer Science, create impactful solutions, and contribute to innovative projects while continuously honing my skills.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

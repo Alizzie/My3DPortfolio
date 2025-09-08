@@ -116,56 +116,63 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Frontend Web Developer",
+    company_name: "preEvent Personal & Service GmbH",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "November 2021 - September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Redesigned the frontend website using Wordpress and Adobe Photoshop ([Website](https://prevent-projects.com/))",      
     ],
+    location: "Trier, Germany"
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Student Research Assistant",
+    company_name: "Trier University of Applied Sciences",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "April 2022 - July 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Tutor of ”OOP Introduction to Java” for the correction and evaluation of the weekly submission tasks",
+      "Tutor of ”Data Structures and Algorithms” to lead the tutoring of this module with the concept ”from students for students”"
     ],
+    location: "Trier, Germany"
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Student Research Assistant",
+    company_name: "Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "January 2023 - September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Improved the GUI of the ProCake Project, a framework for case-based reasoning applications, using Java Swing",
+      "Developed a simple website for the project using Wordpress and Docker ([Website](https://procake.uni-trier.de/))"
     ],
+    location: "Trier, Germany"
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Research Engineer",
+    company_name: "DART Lab, Lake Lucerne Institute ",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "May 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop Android applications and provide technical support for the [HealthCore Project](https://scai.ethz.ch/research/healthcore.html), a digital assessment framework for multi-clinic patient data collection",
+      "Work on implementation of VR application to be used in combination with MRI-compatible videogoggles, aiming at motor capability assessment in MRI environment",
     ],
+    location: "Vitznau, Switzerland"
+  },
+  {
+    title: "Student Research Assistant",
+    company_name: "SCAI Lab, ETH Zurich",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "December 2024 - Present",
+    points: [
+      "Research on standardized open-source formats for wearable sensor data",
+      "Further backend development and data flow for the [HealthCore Project](https://scai.ethz.ch/research/healthcore.html)"
+    ],
+    location: "Zurich, Switzerland"
   },
 ];
 

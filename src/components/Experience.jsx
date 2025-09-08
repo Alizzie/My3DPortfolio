@@ -8,6 +8,32 @@ import { experiences } from "../constants"
 import { SectionWrapper } from "../hoc"
 import { textVariant } from "../utils/motion"
 
+const renderPoint = (text) => {
+  const regex = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(text)) !== null) {
+    parts.push(text.slice(lastIndex, match.index)); // text before link
+    parts.push(
+      <a
+        key={match[2]}
+        href={match[2]}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-secondary underline"
+      >
+        {match[1]}
+      </a>
+    );
+    lastIndex = regex.lastIndex;
+  }
+  parts.push(text.slice(lastIndex)); // remaining text
+  return parts;
+};
+
+
 const ExperienceCard = ({experience}) => (
   <VerticalTimelineElement 
     contentStyle={{background: "#1d1836", color:"#fff"}}
@@ -27,11 +53,15 @@ const ExperienceCard = ({experience}) => (
 
     <div>
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-      <p className="text-secondary text-[16px] font-semibold" style={{margin: 0}}>{experience.company_name}</p>
+      <p className="text-secondary text-[16px] font-semibold flex gap-2 justify-between" style={{margin: 0}}>
+        <span>{experience.company_name}</span>
+        <span>{experience.location}</span>
+      </p>
+
       <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
           <li key={`experience-point-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">
-            {point}
+            {renderPoint(point)}
           </li>
         ))}
       </ul>
